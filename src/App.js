@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; //ngambil dari node modul
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function Tombol(a){
+  return <button onClick={()=>alert('Hai ini')}>{a.Kata} </button>
 }
 
-export default App;
+
+function Hai(){
+  return <div>
+    <p>Saya</p>
+  <Tombol Kata="Klik disini" />
+  <Tombol Kata="Ini aku"/>
+  </div>
+}
+
+//diakhir harus pake export nama functionnya
+export default Hai;
